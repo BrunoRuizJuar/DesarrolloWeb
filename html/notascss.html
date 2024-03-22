@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Notas CSS</title>
+  <link rel="stylesheet" type="text/css" href="../CSS/miestilos.css">
+  <style>
+    /* Reglas de estilo para la lista identificada como "uno" */
+    ul#uno {
+      list-style-type: none;
+      padding: 0px;
+      border: 0px;
+      width: 90px;
+    }
+
+    /* Reglas de estilo para los elementos de la lista identificados como "unoi" */
+    li#unoi a {
+      display: block;
+      text-align: center;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border: 1px solid blue;
+    }
+
+    /* Reglas de estilo para la lista identificada como "dos" */
+    ul#dos {
+      list-style-type: none;
+      padding: 0px;
+      border: 0px;
+      width: 90px;
+    }
+
+    /* Reglas de estilo para los elementos de la lista identificados como "dosi" */
+    li#dosi a {
+      display: block;
+      background-color: #9999ff;
+      text-align: center;
+      text-decoration: none;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    /* Reglas de estilo para los elementos de la lista identificados como "dosi" al pasar el ratón sobre ellos */
+    li#dosi a:hover {
+      background-color: #cc9900;
+      color: white;
+    }
+
+    /* Reglas de estilo para la lista identificada como "tres" */
+    ul#tres {
+      margin: 20px;
+      overflow: hidden;
+    }
+
+    /* Reglas de estilo para los elementos de la lista identificados como "tresi" */
+    li#tresi {
+      display: inline;
+      float: left;
+    }
+
+    /* Reglas de estilo para los elementos de la lista identificados como "tresi" dentro de los elementos "li" */
+    li#tresi a {
+      background-color: #9999ff;
+      text-align: center;
+      text-decoration: none;
+      padding: 10px;
+      float: left;
+    }
+  </style>
+</head>
+<body>
+  <!DOCTYPE html>
+<html>
+<head>
+
+  <!-- a) Elementos <a> con despliegue en línea -->
+  <a href="index.html">Home</a>
+  <a href="noticias.html">Noticias</a>
+  <a href="contacto.html">Contacto</a>
+  <a href="nosotros.html">Nosotros</a>
+
+  <hr>
+
+  <!-- Lista identificada como "uno" -->
+  <ul id="uno">
+    <li id="unoi"><a href="index.html">Home</a></li>
+    <li id="unoi"><a href="noticias.html">Noticias</a></li>
+    <li id="unoi"><a href="contacto.html">Contacto</a></li>
+    <li id="unoi"><a href="nosotros.html">Nosotros</a></li>
+  </ul>
+
+  <hr>
+
+  <!-- Lista identificada como "dos" -->
+  <ul id="dos">
+    <li id="dosi"><a href="index.html">Home</a></li>
+    <li id="dosi"><a href="noticias.html">Noticias</a></li>
+    <li id="dosi"><a href="contacto.html">Contacto</a></li>
+    <li id="dosi"><a href="nosotros.html">Nosotros</a></li>
+  </ul>
+
+  <hr>
+
+  <!-- Lista identificada como "tres" -->
+  <ul id="tres">
+    <li id="tresi"><a href="index.html">Home</a></li>
+    <li id="tresi"><a href="noticias.html">Noticias</a></li>
+    <li id="tresi"><a href="contacto.html">Contacto</a></li>
+    <li id="tresi"><a href="nosotros.html">Nosotros</a></li>
+  </ul>
+
+  <h1>Mis notas de CSS.</h1>
+  <h2>Significado de CSS</h2>
+  <p>CSS (Cascading Style Sheets) es un lenguaje de hojas de estilo utilizado para describir la presentación de un documento HTML. Con CSS, puedes controlar el diseño, el formato y el aspecto visual de tu página web, incluyendo cosas como colores, fuentes, márgenes y posicionamiento de elementos.</p>
+  <h2>Formas de insertar estilos en CSS</h2>
+  <ul>
+    <li>En una etiqueta: con el atributo <code>&lt;style&gt;</code></li>
+    <li>En el encabezado: con la etiqueta <code>&lt;style&gt;</code></li>
+    <li>En un archivo externo.</li>
+  </ul>
+  
+  <h2>Sintaxis de una regla CSS</h2>
+  <pre>
+    h1 {
+      color: blue;
+      font-size: 12px;
+    }
+  </pre>
+  
+  <h2>Referencia de selectores CSS</h2>
+  <p>Puedes encontrar más información sobre los selectores CSS en <a href="http://www.w3schools.com/cssref/css_selectors.asp">http://www.w3schools.com/cssref/css_selectors.asp</a>.</p>
+
+  <!-- Primer bloque con la etiqueta <div id="lgf"> -->
+  <div id="lgf">
+    <strong>Modelo de caja:</strong><br>
+    Yo soy una caja creada con &lt;div <mark>id="lgf"&gt</mark><br>
+    Me aplica la regla de estilo con el selector <mark>#lgf {...}</mark>
+  </div>
+
+  <!-- Segundo bloque con la etiqueta <div class="miclase"> -->
+  <div class="miclase">
+    <strong>Modelo de caja:</strong><br>
+    Yo soy una caja creada con &lt;div <mark>class="miclase"&gt</mark><br>
+    Me aplica la regla de estilo con el selector <mark>.miclase {...}</mark>
+  </div>
+
+</body>
+</html>
