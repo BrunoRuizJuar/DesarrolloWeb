@@ -1,0 +1,364 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font: 12px Verdana, "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
+    /* border: 1px solid black; */
+}
+
+/* Variables */
+:root {
+    --azul: rgba(0, 43, 122, 0.8);
+    --dorado: rgb(213, 159, 15);
+    --dorado-botton: rgb(255, 195, 28);
+    --gris-aside: rgb(60, 61, 63);
+}
+
+/* Utilidades */
+.linea {
+    background-color: var(--dorado);
+    width: 100%;
+    height: 3px;
+}
+.linea-total {
+    width: 100%;
+    height: 2px;
+}
+
+/* Iconos */
+.icon {
+    color: #FFF;
+    font-size: large;
+    display: flex;
+    align-items: center;
+}
+.icon p {
+    padding: 0.5rem;
+}
+
+/* Botones */
+.button-center{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+
+    margin-top: auto;
+}
+
+
+.button-center button {
+    width: 50%;
+    background-color: var(--dorado-botton);
+    padding: 5px;
+    border-radius: 25px;
+}
+
+/* Referencias-links */
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* Titulos */
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;    
+}
+
+.h1-title h1 {
+    font-size: large;
+}
+
+.h2-title h2 {
+    font-size: larger;
+}
+
+.h3-title h3 {
+    font-size: medium;
+}
+
+.h4-titulo h4{
+    font-size: small;
+}
+
+
+/* Body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/*Cabeza*/
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: var(--dorado);
+}
+
+.escudo {
+
+    width: 40%;
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.escudoUNAM{
+    background: url(../img/EscudoUNAM.png);
+} 
+.escudoFESA {
+    background: url(../img/EscudoFESA.png);
+}
+
+.dim_img {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100%;
+    width: 30%;
+}
+
+.escudoFESA {
+    width: 45%;
+}
+
+@media (width <= 1000px) and (width > 600px) {
+
+    .escudo {
+        width: 80%;
+        height: 70px;
+    }
+    .dim_img {
+        width: 20%;
+        height: 100%;
+    }
+    .escudo-title {
+        width: 80%;
+    }
+    .escudo-title h1 {
+        font-size: unset;
+    }
+}
+
+@media (width <= 600px) {
+    .escudo {
+        width: 50%;
+        height: 70px;
+    }
+    .escudo-title {
+        display: none;
+    }
+}
+
+
+/*Navegador*/
+.nav {
+    background-color: var(--azul); 
+}
+
+.nav-lineal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;    
+    padding: 0.25rem;
+}
+
+@media (width <=  600px) {
+    .nav-lineal {
+        overflow: auto; 
+    }
+}
+
+
+/*Cuerpo de la Pagina*/
+
+.contenedor  {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.separacion {
+    width: 65%;
+    display: grid;
+    grid-template-columns: 0.5fr 4.5fr;
+    align-items: start;
+}
+
+/* Aside (Temas importantes) */
+aside {
+    background-color: var(--gris-aside);
+    border-radius: 0 10px 10px 0;
+}
+.lista {
+    padding: 1rem 1.5rem;
+    padding-left: 0;
+}
+.lista li {
+    padding: 0.4rem;
+}
+
+.lista a {
+    color: #FFF;
+}
+
+@media (width <= 1200px) {
+    .separacion {
+        width: 80%;
+    }
+}
+
+@media (width <= 800px ) {  
+
+    .contenedor {
+        padding: 0;
+    }
+    .separacion {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    aside {
+        border-radius: 0;
+    }
+    .lista {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        overflow: auto;
+    }
+
+}
+
+/* Contenido */
+
+.contenido {
+    width: 100%;
+    display: grid;
+} 
+
+.contenido section {
+    display: flex;
+    height: fit-content;
+}
+
+@media (width >=1000px) {
+    .contenido section {
+        justify-content: space-evenly;
+    }
+
+}
+
+@media (width <= 1100px) {
+    .contenido section:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*Esto es el Footter*/
+
+footer {
+    background-color: var(--gris-aside);
+    margin-top: auto;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+.columna {
+    width: 15%;
+}
+
+@media (width <= 900px) {
+    .grid {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2,  1fr);
+        justify-items: center;
+    }
+    .columna {
+        width: 60%;
+    }
+}
+
+
+
+.links a {
+    color: #FFF;
+}
+
+.links ul li {
+    padding-top: 0.5rem;
+}
+
+.ul-redes {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (width <= 600px) {
+    .ul-redes {
+        padding-top: 5px;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    .grid {
+        gap: 20px 5px;
+    }
+}
+
+.line {
+    width: 85%;
+    border-bottom: 2px solid var(--dorado);
+}
+
+.derechos {
+    padding-top: 10px;
+    width: 90%;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* not-redimenciopn */
+aside a,  .nav a{
+    white-space: nowrap;
+}
+
+/* Animaciones */
+li :hover {
+    color: var(--dorado-botton);
+    /* background: transparent;
+    backdrop-filter: blur(10px); */
+}
