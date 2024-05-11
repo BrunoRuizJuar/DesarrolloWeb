@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../js/script1.js"></script>
+</head>
+<body>
+    <header>
+        <div class="escudo">
+            <div class="escudoUNAM dim_img"></div>
+            <div class="escudo-title">
+                <a href="https://www.unam.mx/">
+                    <h1>Universiodad Nacional Autónoma de México</h1>
+                </a>
+            </div>
+        </div>
+        <div class="escudo">
+            <div class="escudoFESA dim_img"></div>            
+            <div class="escudo-title">
+                <a href="https://www.acatlan.unam.mx/">
+                    <h1>Facultad de Estudios Superiores Acatlán</h1>
+                </a>
+                <a href="https://www.acatlan.unam.mx/index.php?id=31">
+                    <h1>Programa de Matemáticas Aplicadas y Computación</h1>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- <i class="fa-solid fa-bars"> -->
+    <nav class="nav">
+        <ul class="lista nav-lineal">
+            <li>
+                <a href="index.html"><ion-icon name="logo-facebook" class="icon"></ion-icon>Inicio</a>
+            </li>
+            <li>
+                <a href="#"><ion-icon name="logo-facebook" class="icon"></ion-icon>Temarios</a>
+            </li>
+            <li>
+                <a href="#"><ion-icon name="logo-facebook" class="icon"></ion-icon>Horarios</a>
+            </li>
+            <li>
+                <a href="#"><ion-icon name="logo-facebook" class="icon"></ion-icon>Bolsa de Trabajo</a>
+            </li>
+            <li>
+                <a href="#"><ion-icon name="logo-facebook" class="icon"></ion-icon>Acreditación</a>
+            </li>
+            <li>
+                <a href="#"><ion-icon name="logo-facebook" class="icon"></ion-icon>Páginas de interés</a>
+            </li>
+            <li>
+                <a href="Login.html"><ion-icon name="logo-facebook" class="icon"></ion-icon>Ingresar</a>
+            </li>            
+        </ul>
+
+    </nav>
+    <div class="background-container">
+        <div class="blur-background"></div>
+        <div class="form-container">
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Nombre de Usuario:</label><br>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña:</label><br>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <br>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            <p id="error-message"></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="grid">
+            <div class="columna">
+                <div class="nosostros">
+                    <div class="h4-titulo">
+                        <h4>MAC</h4>
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li>Sobre nosotros</li>
+                            <li>DGEA</li>
+                            <li>PIMAC</li>        
+                            <li>Tutorias</li>
+                        </ul>                        
+                    </div>
+                </div>
+            </div>
+            <div class="columna">
+                <div class="ayuda">
+                    <div class="h4-titulo">
+                        <h4>Contactanos</h4>
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li>Telefono</li>
+                            <li>Correo</li>
+                            <li>Dirección</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="columna">
+                <div class="servicios">
+                    <div class="h4-titulo">
+                        <h4>Servicios</h4>
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li>Gaceta UNAM</li>
+                            <li>Gaceta FES Acatlán</li>
+                            <li>iOS Lab FES Acatlán</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="columna">
+                <div class="redes">
+                    <div class="h4-titulo">
+                        <h4>Redes Sociales</h4>
+                    </div>
+                    <div class="links">
+                        <ul class="ul-redes">
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>                    
+                </div>
+
+            </div>
+        </div>
+        <div><p>Todos los derechos reservados</p></div>
+    </footer>
+</body>
+</html>

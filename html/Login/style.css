@@ -1,0 +1,413 @@
+* {
+    /* border: 1px solid black; */
+    padding: 0;
+    margin: 0;
+    font: 12px Verdana, "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
+}
+
+:root {
+    --azul: rgba(0, 43, 122, 0.8);
+    --dorado: rgb(213, 159, 15);
+    --dorado-botton: rgb(255, 195, 28);
+}
+
+
+/* Body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100VH;
+}
+
+
+/*Cabeza*/
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: var(--dorado);
+    
+}
+
+.escudo {
+    width: 40%;
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.escudoUNAM{
+    background: url(../img/EscudoUNAM.png);
+} 
+.escudoFESA {
+    background: url(../img/EscudoFESA.png);
+}
+
+.dim_img {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100%;
+    width: 30%;  
+}
+.escudo-title {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    text-align: center;    
+}
+
+.escudo-title a {
+    text-decoration: none;
+}
+
+.escudo-title h1 {
+    padding: 5px;
+    font-size: large;
+    color: #FFF;
+    font: bold;
+}
+
+
+
+@media (width <= 1000px) and (width > 600px) {
+
+    .escudo {
+        width: 80%;
+        height: 70px;
+    }
+    .escudoUNAM, .escudoFESA {
+        width: 20%;
+        height: 100%;
+    }
+    .escudo-title {
+        width: 80%;
+    }
+    .escudo-title h1 {
+        font-size: unset;
+    }
+}
+
+@media (width <= 600px) {
+    .escudo {
+        width: 50%;
+        height: 70px;
+    }
+    .escudo-title {
+        display: none;
+    }
+}
+
+
+/*Navegador*/
+.nav {
+    background-color: var(--azul); 
+}
+
+.nav-lineal {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.4rem 0;
+
+}
+
+.lista {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.25rem;
+}
+
+nav ul li a ion-icon { 
+    margin-right: 0.5rem;
+}
+
+@media (width <= 700px) {
+    .icon {
+        display: none;
+    } 
+}
+
+
+
+/*Cuerpo de la Pagina*/
+/*Contenido*/
+.contenido  {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    color: #FFF;
+}
+
+.separacion {
+    width: 75%;
+    display: inline-flex;
+}
+
+/* Temas importantes*/
+aside {
+    background-color: rgb(60, 61, 63);
+    border-radius: 0 10px 10px 0;
+}
+.lista {
+    margin: 1rem 1.5rem;
+    margin-left: 0;
+}
+.lista li {
+    padding: 0.4rem;
+}
+
+.lista li a {
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+}
+
+/* Andres */
+
+.lista li:hover {
+    border-radius: 25px;
+}
+.lista li:hover ul {
+    display: block;
+}
+.lista li > ul {
+    background-color: rgb(98, 101, 107);
+    left: 255px;
+    margin: -25px 0px 0px 5px;
+    border-radius: 0 10px 10px 0;
+    padding: 0.4rem;
+    padding: 5px 0px;
+    width: 175px;
+    display: none;
+    position: absolute;
+}
+.lista li > ul > li:hover {
+    border-radius: 20px 20px 20px 20px;
+}
+
+@media (width <= 750px ) {  
+
+    .contenido {
+        padding: 0;
+    }
+    .separacion {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        
+    }
+    aside {
+        border-radius: 0;
+    }
+    .lista {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        overflow: auto;
+    }
+
+}
+
+
+/* Eventos Avisos*/
+.ploter {
+    width: 100%;
+    display: grid;
+    
+} 
+
+.ploter section {
+    display: flex;
+    padding-top: 1rem;
+    height: fit-content;
+}
+
+.eventos, .avisos{
+    width: 40%;
+    
+    border-radius: 10px;
+    background-color: var(--azul);
+    
+    padding: 0 10px 0 10px;
+    margin: 10px 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (width >=1000px) {
+    .ploter section {
+        justify-content: space-evenly;
+    }
+
+}
+
+@media (width <= 1100px) {
+    .ploter section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+    }
+
+    .eventos, .avisos {
+        width: 80%;
+    }
+
+} 
+@media (width <= 750px ) {  
+    .eventos, .avisos {
+        width: 65%;
+    }  
+}
+
+article .cont {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;   
+    
+}
+
+/* Titulos Eventos y Avisos */
+.h3-titulo {
+    text-align: center;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 10px;
+}
+.h3-titulo h3 {
+        font-size: 14px;
+}
+
+.linea {
+    background-color: var(--dorado);
+    width: 100%;
+    height: 3px;
+}
+
+.cont-1 {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    padding:  0 10px;
+}
+
+.cont-eventos, .cont-avisos {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.titulo {
+    padding: 5px;
+}
+
+.titulo a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+b {
+   font-style: oblique;
+
+}
+
+.linea-total {
+    width: 100%;
+    height: 2px;
+}
+
+.resumen {
+    padding: 0 5px;
+    color: rgba(255, 255, 255, .5);
+    font: 12px Verdana, "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
+}
+
+/* Botones */
+
+.button-center{
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+
+    margin-top: auto;
+}
+
+
+.button-center button {
+    width: 50%;
+    background-color: var(--dorado-botton);
+    padding: 5px;
+    border-radius: 25px;
+}
+
+
+
+
+
+/*Esto es el Footter*/
+
+footer {
+    background-color: black;
+    margin-top: auto;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.h4-titulo {
+    border-bottom: 1px solid var(--dorado-botton);
+}
+
+.links ul li {
+    list-style: none;
+    padding-top: 0.5rem;
+}
+
+.ul-redes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    text-align: center;
+}
